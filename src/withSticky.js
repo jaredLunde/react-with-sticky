@@ -1,5 +1,5 @@
 import React from 'react'
-import universal from 'react-universal-component'
+import {asyncComponent} from 'react-async-component'
 import getDisplayName from 'react-display-name'
 
 
@@ -16,10 +16,7 @@ export const canStick = (function() {
 
 
 
-const Sticky = universal(
-  import('react-sticky-fill'),
-  {loading: function () { return '' }}
-)
+const Sticky = asyncComponent({resolve: () => import('react-sticky-fill')})
 
 
 export default function withSticky (Component) {
@@ -29,6 +26,9 @@ export default function withSticky (Component) {
       : <Sticky children={<Component {...props}/>}/>
   }
 
-  Sticker.displayName = `withSticky(${getDisplayName(Component)})`
+  if (__DEV__) {
+    Sticker.displayName = `withSticky(${getDisplayName(Component)})`
+  }
+
   return Sticker
 }

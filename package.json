@@ -1,6 +1,6 @@
 {
   "name": "@jaredlunde/react-with-sticky",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A sticky polyfill that lazy loads with react-universal-component",
   "main": "cjs/index.js",
   "repository": "https://github.com/jaredLunde/react-with-sticky",

@@ -1,6 +1,6 @@
 {
   "name": "@jaredlunde/react-with-sticky",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A sticky polyfill that lazy loads with react-universal-component",
   "main": "cjs/index.js",
   "repository": "https://github.com/jaredLunde/react-with-sticky",
@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
-    "react-display-name": "^0.2.4"
+    "react-display-name": "^0.2.4",
+    "react-sticky-fill": "^0.8.4"
   },
   "peerDependencies": {
     "prop-types": "^15.x",

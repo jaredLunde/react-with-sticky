@@ -1,6 +1,7 @@
 import React from 'react'
-import {asyncComponent} from 'react-async-component'
+import lazy from 'react-broker/macro'
 import getDisplayName from 'react-display-name'
+const Sticky = lazy('react-sticky-fill')
 
 
 export const canStick = (function() {
@@ -13,10 +14,6 @@ export const canStick = (function() {
   mStyle.cssText = "position:sticky;position:-webkit-sticky;position:-ms-sticky;"
   return mStyle.position.indexOf('sticky') !== -1
 })();
-
-
-
-const Sticky = asyncComponent({resolve: () => import('react-sticky-fill')})
 
 
 export default function withSticky (Component) {

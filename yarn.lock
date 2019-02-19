@@ -821,14 +821,6 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@jaredlunde/react-tree-walker@^4.3.12":
-  version "4.3.12"
-  resolved "https://registry.yarnpkg.com/@jaredlunde/react-tree-walker/-/react-tree-walker-4.3.12.tgz#bad8b37d1efe41516478fbfb47fa327b2747553a"
-  integrity sha512-LapDQWHk40D5i0AvNDoQGxyNWsrRvFM3V48swqU69srOd8sgo4AGQ3HysSYjDKmzDlJBeo0ZmvbgCeRuucjVJA==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@babel/runtime-corejs2" "^7.3.1"
-
 "@render-props/utils@^0.2.2":
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/@render-props/utils/-/utils-0.2.8.tgz#a5bb824bf1a8e7596c6845809b6a6d7d3351ee1e"
@@ -2333,14 +2325,13 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-broker@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/react-broker/-/react-broker-1.1.2.tgz#abab5a1490fc2e689209b85773f1a92c66c124d2"
-  integrity sha512-wFMEESBHJxwvYEIhkPInyadcWWuFmBt+ghYsrElY5aPDx+wbwvVkrH4hgErf//WK1zs5xEu6JERsKuDbGh4/dw==
+react-broker@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/react-broker/-/react-broker-1.1.13.tgz#061e97c1bacfd7481ca11291fc5585883c44c826"
+  integrity sha512-fRbBr3tMUfjpl4mw+KORaiFADN7XGSImGzs2d3HdWP7d1dp8eq0H5XVuhwKWHRteuXlph4cFOaChF5q2eorLow==
   dependencies:
     "@babel/runtime" "^7.3.1"
     "@babel/runtime-corejs2" "^7.3.1"
-    "@jaredlunde/react-tree-walker" "^4.3.12"
     babel-plugin-macros "^2.4.0"
     cdll-memoize "^0.1.5"
     empty "^0.10.1"

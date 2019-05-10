@@ -1,7 +1,7 @@
 import React from 'react'
-import lazy from 'react-broker/macro'
+import {lazy} from 'react-broker'
 import getDisplayName from 'react-display-name'
-const Sticky = lazy('react-sticky-fill')
+const Sticky = lazy('react-sticky-fill', () => import(/* webpackChunkName: "react-sticky-fill" */'react-sticky-fill'))
 
 
 export const canStick = (function() {

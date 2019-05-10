@@ -1,6 +1,6 @@
 {
   "name": "@jaredlunde/react-with-sticky",
-  "version": "1.1.2",
+  "version": "1.1.5",
   "description": "A sticky polyfill that lazy loads with react-universal-component",
   "main": "cjs/index.js",
   "esnext": "es/index.js",
@@ -14,7 +14,6 @@
     "@stellar-apps/babel-preset-es": "^1.0.4",
     "@stellar-apps/babel-preset-react": "^1.0.1",
     "prettier": "^1.14.2",
-    "react-broker": "^1.2.5",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
@@ -23,7 +22,8 @@
   },
   "peerDependencies": {
     "prop-types": ">= 15.6.0",
-    "react": ">= 16.3.0"
+    "react": ">= 16.3.0",
+    "react-broker": "^2.0.0"
   },
   "scripts": {
     "build": "yarn run build:es && yarn run build:cjs",
